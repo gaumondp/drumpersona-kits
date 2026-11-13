@@ -15,20 +15,22 @@ of the kits.
 The files are attached to the [Releases](https://github.com/gaumondp/drumpersona-kits/releases)
 of this repository (one release per collection), not stored in its history.
 Each collection's folder holds its author, source, licence text, checksums and
-key map.
+key map. `drumpersona-kits-index.xml` lists the kits for DrumPersona; the table
+below is written from it by `tools/write_readme.py`, and `tools/check_index.py`
+checks it (`--remote`: against the releases; `--sha DIR`: against the files).
 
 <!-- kits:begin -->
-| Kit | Collection | Author | Licence | What it is | Size |
-|---|---|---|---|---|---|
-| Black Pearl | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | 4-piece acoustic kit | 19 MB |
-| Red Zeppelin | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | 4-piece acoustic kit | 25 MB |
-| Blonde Bop | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | jazz kit | 30 MB |
-| Blonde Bop HR | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | jazz kit | 29 MB |
-| Buskmans Holiday | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | hand percussion | 42 MB |
-| MuldjordKit (General MIDI) | [MuldjordKit (FreePats)](freepats-muldjordkit/) | Lars Muldjord, FreePats | CC BY 4.0 | rock / metal acoustic kit, moved to the General MIDI keys | 209 MB |
-| ColomboADK (General MIDI) | [ColomboADK (FreePats)](freepats-colombo/) | Marcos Guglielmetti, FreePats | GPL-2.0-or-later + exception | acoustic kit, moved to the General MIDI keys | 21 MB |
-| World Percussion (General MIDI) | [World Percussion (FreePats)](freepats-world-percussion/) | FreePats | CC0 | hand percussion, moved to the General MIDI keys | 9 MB |
-| GeneralUser GS 2.0.3 | [GeneralUser GS](generaluser-gs/) | S. Christian Collins | GeneralUser GS License v2.0 | a General MIDI bank with 13 drum kits (sample origin not guaranteed) | 31 MB |
+| Kit | Collection | Author | Licence | What it is | Size | File |
+|---|---|---|---|---|---|---|
+| Black Pearl | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | drum kit | 19 MB | [Black_Pearl_4_LV2.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Black_Pearl_4_LV2.sf2) |
+| Red Zeppelin | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | drum kit | 25 MB | [Red_Zeppelin_4_LV2.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Red_Zeppelin_4_LV2.sf2) |
+| Blonde Bop | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | drum kit | 30 MB | [Blonde_Bop_LV2.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Blonde_Bop_LV2.sf2) |
+| Blonde Bop HR | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | drum kit | 29 MB | [Blonde_Bop_HR_LV2.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Blonde_Bop_HR_LV2.sf2) |
+| Buskmans Holiday | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | percussion | 42 MB | [Buskmans_Holiday.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Buskmans_Holiday.sf2) |
+| MuldjordKit | [MuldjordKit (FreePats)](freepats-muldjordkit/) | Lars Muldjord, FreePats | CC BY 4.0 | drum kit | 209 MB | [MuldjordKit-20201018-GM.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-muldjordkit-gm-2020-10-18/MuldjordKit-20201018-GM.sf2) |
+| ColomboADK | [ColomboADK (FreePats)](freepats-colombo/) | Marcos Guglielmetti, FreePats | GPL-2.0-or-later | drum kit | 21 MB | [ColomboADK-FreePats-20200530-GM.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-colombo-gm-2020-05-30/ColomboADK-FreePats-20200530-GM.sf2) |
+| World Percussion | [World Percussion (FreePats)](freepats-world-percussion/) | FreePats | CC0 | percussion | 9 MB | [WorldPercussion-20200905-GM.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-world-percussion-gm-2020-09-05/WorldPercussion-20200905-GM.sf2) |
+| GeneralUser GS 2.0.3 | [GeneralUser GS](generaluser-gs/) | S. Christian Collins | GeneralUser GS License v2.0 (sample origin not guaranteed) | drum kit | 31 MB | [GeneralUser-GS-2.0.3.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2) |
 <!-- kits:end -->
 
 The AVL kits are close to the General MIDI key map but not identical: see their

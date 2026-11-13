@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The kits of drumpersona-kits, as DrumPersona reads them (Edit kit, Kit library...).
+     One <Collection> per folder of this repository; one <Kit> per file of its releases.
+     A kit's id never changes and is never reused; its sha256 changes with a new version.
+     <Key> lists only the pieces whose key is not the General MIDI one (none="true": no sound). -->
+<KitIndex schemaVersion="1" revision="1" updated="2026-11-13">
+  <Collection id="avl-drumkits" name="AVL Drumkits" author="Glen MacArthur" licence="CC-BY-SA-3.0"
+              source="https://www.bandshed.net/avldrumkits/">
+    <Kit id="nemfgz5n" name="Black Pearl" nature="drums" size="19448258"
+         sha256="e0542ec19f2816ef4e0d00aeb087e7aa311e888d6f4805f971688bb267c6d405"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Black_Pearl_4_LV2.sf2">
+      <Key piece="HighMidTom" key="47"/>
+      <Key piece="HighTom" none="true"/>
+    </Kit>
+    <Kit id="3nqmfnn7" name="Red Zeppelin" nature="drums" size="26470546"
+         sha256="289fc3e30a4859eb74ae14eb08ddef453e8bf8eab3e501772dcf96fd8328a71a"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Red_Zeppelin_4_LV2.sf2">
+      <Key piece="HighMidTom" key="47"/>
+      <Key piece="HighTom" none="true"/>
+    </Kit>
+    <Kit id="x87v6yec" name="Blonde Bop" nature="drums" size="31399792"
+         sha256="7fdb2ab1810604127f06e27f45669e0ed4ffd8d997f1929c0cad5b96a940b979"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Blonde_Bop_LV2.sf2">
+      <Key piece="HighMidTom" key="47"/>
+      <Key piece="HighTom" none="true"/>
+    </Kit>
+    <Kit id="e9crw7fh" name="Blonde Bop HR" nature="drums" size="30456658"
+         sha256="070d798a25d4d66ce8afd9e3b4b08670f895982c92258f05508ef6b44a0169ba"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Blonde_Bop_HR_LV2.sf2">
+      <Key piece="HighMidTom" key="47"/>
+      <Key piece="HighTom" none="true"/>
+    </Kit>
+    <Kit id="f7sdamnv" name="Buskmans Holiday" nature="percussion" size="44513548"
+         sha256="868a67ff7ce85308d9a5cbbb20fad94a7d8da643a19c7f8e44e0117af6d7cf74"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/avl-drumkits-1.0/Buskmans_Holiday.sf2"/>
+  </Collection>
+  <Collection id="freepats-muldjordkit" name="MuldjordKit (FreePats)" author="Lars Muldjord, FreePats"
+              licence="CC-BY-4.0" source="https://freepats.zenvoid.org/Percussion/acoustic-drum-kit.html">
+    <Kit id="5yz7h1cb" name="MuldjordKit" nature="drums" size="219362048"
+         sha256="f4370c66a80dc74efd15984f98391565289ccb1a8ee2fc00ed9bb6f563edf16a"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-muldjordkit-gm-2020-10-18/MuldjordKit-20201018-GM.sf2"/>
+  </Collection>
+  <Collection id="freepats-colombo" name="ColomboADK (FreePats)" author="Marcos Guglielmetti, FreePats"
+              licence="GPL-2.0-or-later" source="https://github.com/freepats/colomboADK">
+    <Kit id="rfkrz2g9" name="ColomboADK" nature="drums" size="22089830"
+         sha256="2e0af482b75076fd58ff79db270ed1a305f24978037f4d01e6e024b1b0d7735e"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-colombo-gm-2020-05-30/ColomboADK-FreePats-20200530-GM.sf2"/>
+  </Collection>
+  <Collection id="freepats-world-percussion" name="World Percussion (FreePats)" author="FreePats"
+              licence="CC0-1.0" source="https://github.com/freepats/world-percussion">
+    <Kit id="1vw3x27z" name="World Percussion" nature="percussion" size="9256408"
+         sha256="9c12279c647ed285f75052a53da359a61a4c4a6ee12099acfe398430608e9272"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-world-percussion-gm-2020-09-05/WorldPercussion-20200905-GM.sf2"/>
+  </Collection>
+  <Collection id="generaluser-gs" name="GeneralUser GS" author="S. Christian Collins"
+              licence="LicenseRef-GeneralUser-GS-2.0" originNotGuaranteed="true"
+              source="https://www.schristiancollins.com/generaluser.php">
+    <Kit id="0sxsz30y" name="GeneralUser GS 2.0.3" nature="drums" size="32319396"
+         sha256="9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2"/>
+  </Collection>
+</KitIndex>
