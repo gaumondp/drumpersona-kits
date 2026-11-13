@@ -5,8 +5,10 @@ Free, openly licensed sampled drum kits for
 they stay available. Each kit is a SoundFont 2 file (`.sf2`) that DrumPersona
 imports with **Edit kit → Import .sf2…**. Any SoundFont player can play them too.
 
-Each kit is copied here exactly as its author published it, and keeps its
-author's licence. This repository is not affiliated with the authors of the kits.
+Each kit is copied here as its author published it (or, when its licence allows,
+changed only to work better as a drum kit, the original kept next to it), and
+keeps its author's licence. This repository is not affiliated with the authors
+of the kits.
 
 ## The kits
 
@@ -23,10 +25,10 @@ key map.
 | Blonde Bop | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | jazz kit | 30 MB |
 | Blonde Bop HR | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | jazz kit | 29 MB |
 | Buskmans Holiday | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | hand percussion | 42 MB |
-| MuldjordKit | [MuldjordKit (FreePats)](freepats-muldjordkit/) | Lars Muldjord, FreePats | CC BY 4.0 | rock / metal acoustic kit | 209 MB |
+| MuldjordKit (General MIDI) | [MuldjordKit (FreePats)](freepats-muldjordkit/) | Lars Muldjord, FreePats | CC BY 4.0 | rock / metal acoustic kit, moved to the General MIDI keys | 209 MB |
 <!-- kits:end -->
 
-Most of these kits do not follow the General MIDI key map: see each collection's
+The AVL kits are close to the General MIDI key map but not identical: see their
 key table. In DrumPersona, a pad whose sound is not the piece it names can be
 redirected with **Edit kit**.
 
@@ -40,6 +42,13 @@ A kit is added only when:
    its archive if it ships in one);
 3. its source page, the file's date, its licence and its SHA-256 are recorded in
    its collection's folder, with the licence text.
+
+A kit may also be **changed** here, only to make it work better as a drum kit
+(today: moving it to the General MIDI keys), and only when its licence allows
+changes (no ND licence). Then the original is kept unchanged next to it, the
+change is explained in the collection's README with the reason, the script that
+makes it is in the folder, and the changed file keeps the original's licence
+(and the same licence again for a share-alike one).
 
 Kits under a non-commercial (NC) or no-derivatives (ND) licence, or of unknown
 origin, are not added. A new version of a collection is a new release; a
