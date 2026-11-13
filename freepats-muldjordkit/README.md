@@ -17,8 +17,8 @@ is, a General MIDI drum part plays the wrong pieces, or nothing.
 and nothing else.** Every sample, level, envelope and velocity layer is the
 original's; only which key plays each piece changed. Each moved key was checked
 to play exactly the same sound as its old key (rendered note for note, 19 of 19
-identical). `make_gm.py` in this folder makes it from the original, and always
-gives the same file.
+identical). `../tools/remap_keys.py gm-keys.json` makes it from the original,
+and always gives the same file.
 
 The original, unchanged, is kept too (`MuldjordKit-20201018.sf2`), for anyone
 who wants the FreePats key map.

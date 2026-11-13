@@ -26,18 +26,23 @@ key map.
 | Blonde Bop HR | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | jazz kit | 29 MB |
 | Buskmans Holiday | [AVL Drumkits](avl-drumkits/) | Glen MacArthur | CC BY-SA 3.0 | hand percussion | 42 MB |
 | MuldjordKit (General MIDI) | [MuldjordKit (FreePats)](freepats-muldjordkit/) | Lars Muldjord, FreePats | CC BY 4.0 | rock / metal acoustic kit, moved to the General MIDI keys | 209 MB |
+| ColomboADK (General MIDI) | [ColomboADK (FreePats)](freepats-colombo/) | Marcos Guglielmetti, FreePats | GPL-2.0-or-later + exception | acoustic kit, moved to the General MIDI keys | 21 MB |
+| World Percussion (General MIDI) | [World Percussion (FreePats)](freepats-world-percussion/) | FreePats | CC0 | hand percussion, moved to the General MIDI keys | 9 MB |
+| GeneralUser GS 2.0.3 | [GeneralUser GS](generaluser-gs/) | S. Christian Collins | GeneralUser GS License v2.0 | a General MIDI bank with 13 drum kits (sample origin not guaranteed) | 31 MB |
 <!-- kits:end -->
 
 The AVL kits are close to the General MIDI key map but not identical: see their
 key table. In DrumPersona, a pad whose sound is not the piece it names can be
-redirected with **Edit kit**.
+redirected with **Edit kit**. `tools/remap_keys.py` makes the General MIDI
+versions from the originals, with each collection's `gm-keys.json`.
 
 ## Adding a kit
 
 A kit is added only when:
 
 1. its author states an open licence on their own page (CC0, CC BY, CC BY-SA,
-   MIT, Apache-2.0, GPL), not only a re-uploader or an archive;
+   MIT, Apache-2.0, GPL, or an author's own licence that allows redistribution
+   and changes), not only a re-uploader or an archive;
 2. the file is copied unchanged from the author's own release (extracted from
    its archive if it ships in one);
 3. its source page, the file's date, its licence and its SHA-256 are recorded in
@@ -51,8 +56,15 @@ makes it is in the folder, and the changed file keeps the original's licence
 (and the same licence again for a share-alike one).
 
 Kits under a non-commercial (NC) or no-derivatives (ND) licence, or of unknown
-origin, are not added. A new version of a collection is a new release; a
-published release is never changed.
+origin, are not added. When an author says the origin of some samples is not
+fully known, the kit is marked so in the table and its README. A new version of
+a collection is a new release; a published release is never changed.
+
+## For later
+
+- **Salamander Drumkit** by Alexander Holm (CC BY-SA 3.0): published in SFZ only.
+  It needs a conversion to SoundFont 2, which loses its random round-robins and
+  its controller-driven hi-hat.
 
 ## Licence of this repository
 
