@@ -3,7 +3,7 @@
      One <Collection> per folder of this repository; one <Kit> per file of its releases.
      A kit's id never changes and is never reused; its sha256 changes with a new version.
      <Key> lists only the pieces whose key is not the General MIDI one (none="true": no sound). -->
-<KitIndex schemaVersion="1" revision="1" updated="2026-11-13">
+<KitIndex schemaVersion="1" revision="2" updated="2026-11-14">
   <Collection id="avl-drumkits" name="AVL Drumkits" author="Glen MacArthur" licence="CC-BY-SA-3.0"
               source="https://www.bandshed.net/avldrumkits/">
     <Kit id="nemfgz5n" name="Black Pearl" nature="drums" size="19448258"
@@ -58,5 +58,12 @@
     <Kit id="0sxsz30y" name="GeneralUser GS 2.0.3" nature="drums" size="32319396"
          sha256="9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
          url="https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2"/>
+  </Collection>
+  <Collection id="musescore-general" name="MuseScore General" author="S. Christian Collins, Frank Wen (FluidR3)"
+              licence="MIT" originNotGuaranteed="true"
+              source="https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/">
+    <Kit id="e2ny61n9" name="MuseScore General 0.2" nature="drums" size="21256182"
+         sha256="68b108ac7d919e8d01681a42da383fbdf34a97224a98d754a27775b19422fefc"
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/musescore-general-drums-0.2/MuseScore_General-Drums-0.2.sf2"/>
   </Collection>
 </KitIndex>

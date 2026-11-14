@@ -31,6 +31,7 @@ checks it (`--remote`: against the releases; `--sha DIR`: against the files).
 | ColomboADK | [ColomboADK (FreePats)](freepats-colombo/) | Marcos Guglielmetti, FreePats | GPL-2.0-or-later | drum kit | 21 MB | [ColomboADK-FreePats-20200530-GM.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-colombo-gm-2020-05-30/ColomboADK-FreePats-20200530-GM.sf2) |
 | World Percussion | [World Percussion (FreePats)](freepats-world-percussion/) | FreePats | CC0 | percussion | 9 MB | [WorldPercussion-20200905-GM.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/freepats-world-percussion-gm-2020-09-05/WorldPercussion-20200905-GM.sf2) |
 | GeneralUser GS 2.0.3 | [GeneralUser GS](generaluser-gs/) | S. Christian Collins | GeneralUser GS License v2.0 (sample origin not guaranteed) | drum kit | 31 MB | [GeneralUser-GS-2.0.3.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2) |
+| MuseScore General 0.2 | [MuseScore General](musescore-general/) | S. Christian Collins, Frank Wen (FluidR3) | MIT (sample origin not guaranteed) | drum kit | 20 MB | [MuseScore_General-Drums-0.2.sf2](https://github.com/gaumondp/drumpersona-kits/releases/download/musescore-general-drums-0.2/MuseScore_General-Drums-0.2.sf2) |
 <!-- kits:end -->
 
 The AVL kits are close to the General MIDI key map but not identical: see their
