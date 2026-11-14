@@ -77,6 +77,14 @@ def check(root):
                     findings.append(f"{where}: a Key needs key=\"0..127\" or none=\"true\"")
                 elif key.get("none") != "true" and int(key.get("key")) > 127:
                     findings.append(f"{where}: key above 127")
+            seen = set()
+            for p in kit.findall("Preset"):
+                bank, number = p.get("bank") or "", p.get("preset") or ""
+                if not (bank.isdigit() and number.isdigit() and int(bank) <= 128 and int(number) <= 127):
+                    findings.append(f"{where}: a Preset needs bank=\"0..128\" and preset=\"0..127\"")
+                elif (bank, number) in seen:
+                    findings.append(f"{where}: preset {bank}:{number} listed twice")
+                seen.add((bank, number))
             kits.append(kit)
     return findings, kits
 

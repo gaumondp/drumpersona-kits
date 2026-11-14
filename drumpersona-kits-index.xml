@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- The kits of drumpersona-kits, as DrumPersona reads them (Edit kit, Kit library...).
-     One <Collection> per folder of this repository; one <Kit> per file of its releases.
-     A kit's id never changes and is never reused; its sha256 changes with a new version.
-     <Key> lists only the pieces whose key is not the General MIDI one (none="true": no sound). -->
-<KitIndex schemaVersion="1" revision="2" updated="2026-11-14">
+<!-- The kits of drumpersona-kits, as DrumPersona reads them (Kit Library, the kit picker).
+
+     What becomes what in DrumPersona:
+     - <Collection>: one folder of this repository and its author, licence and source page. The
+       Kit Library shows the licence once per collection before installing (never in the list).
+     - <Kit>: one file of the releases. The Kit Library lists it by its name and size, under
+       "Drum kits" (nature="drums") or "Percussion" (nature="percussion"), "Installed" once it is.
+       Installed, it makes one kit of DrumPersona per preset (below), listed in the kit picker
+       under "SoundFont (.sf2)" (or "SoundFont percussion (.sf2)" for nature="percussion"), in a
+       sub-menu named after the <Kit>'s name: two files that both have a "Standard" stay apart.
+     - <Preset bank="" preset="">: the presets of the file that become kits, in this order, each
+       under its own name in the file. None listed: every preset of the file's drum bank (128,
+       else 127, else 120). List them when a file has variants nobody picks (MuseScore General's
+       Standard 1 to 7) or presets that are not drum kits (sound effects).
+     - <Key piece="" key="">: only the pieces whose key is not the General MIDI one (none="true":
+       no sound). A pad with no sound is left out of the kit, so the drummer's automatic
+       stand-in plays instead (a crash for a missing china).
+     A kit's id never changes and is never reused; its sha256 changes with a new version. -->
+<KitIndex schemaVersion="1" revision="3" updated="2026-11-14">
   <Collection id="avl-drumkits" name="AVL Drumkits" author="Glen MacArthur" licence="CC-BY-SA-3.0"
               source="https://www.bandshed.net/avldrumkits/">
     <Kit id="nemfgz5n" name="Black Pearl" nature="drums" size="19448258"
@@ -57,13 +71,25 @@
               source="https://www.schristiancollins.com/generaluser.php">
     <Kit id="0sxsz30y" name="GeneralUser GS 2.0.3" nature="drums" size="32319396"
          sha256="9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
-         url="https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2"/>
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/generaluser-gs-2.0.3/GeneralUser-GS-2.0.3.sf2">
+      <!-- The drum kits, without SFX (sound effects) and CM-64/32L (an old synthesizer's map). -->
+      <Preset bank="128" preset="0"/><Preset bank="128" preset="1"/><Preset bank="128" preset="2"/>
+      <Preset bank="128" preset="8"/><Preset bank="128" preset="16"/><Preset bank="128" preset="24"/>
+      <Preset bank="128" preset="25"/><Preset bank="128" preset="26"/><Preset bank="128" preset="32"/>
+      <Preset bank="128" preset="40"/><Preset bank="128" preset="48"/>
+    </Kit>
   </Collection>
   <Collection id="musescore-general" name="MuseScore General" author="S. Christian Collins, Frank Wen (FluidR3)"
               licence="MIT" originNotGuaranteed="true"
               source="https://ftp.osuosl.org/pub/musescore/soundfont/MuseScore_General/">
     <Kit id="e2ny61n9" name="MuseScore General 0.2" nature="drums" size="21256182"
          sha256="68b108ac7d919e8d01681a42da383fbdf34a97224a98d754a27775b19422fefc"
-         url="https://github.com/gaumondp/drumpersona-kits/releases/download/musescore-general-drums-0.2/MuseScore_General-Drums-0.2.sf2"/>
+         url="https://github.com/gaumondp/drumpersona-kits/releases/download/musescore-general-drums-0.2/MuseScore_General-Drums-0.2.sf2">
+      <!-- The eight main kits; the file also has their variants (Standard 1 to 7, Room 1 to 7,
+           Power 1 to 3, Jazz 1 to 4, Brush 1 and 2) and marching instruments, a few keys each. -->
+      <Preset bank="128" preset="0"/><Preset bank="128" preset="8"/><Preset bank="128" preset="16"/>
+      <Preset bank="128" preset="24"/><Preset bank="128" preset="25"/><Preset bank="128" preset="32"/>
+      <Preset bank="128" preset="40"/><Preset bank="128" preset="48"/>
+    </Kit>
   </Collection>
 </KitIndex>

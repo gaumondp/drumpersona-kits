@@ -51,6 +51,12 @@ A kit is added only when:
 3. its source page, the file's date, its licence and its SHA-256 are recorded in
    its collection's folder, with the licence text.
 
+When a file holds many presets of which only some are kits worth picking (variants
+for compatibility, sound effects), its `<Kit>` lists the ones DrumPersona installs
+with `<Preset bank="" preset=""/>`; the file itself is not changed. How DrumPersona
+turns each element of the index into its lists and menus is written at the top of
+`drumpersona-kits-index.xml`.
+
 A kit may also be **changed** here, only to make it work better as a drum kit
 (today: moving it to the General MIDI keys), and only when its licence allows
 changes (no ND licence). Then the original is kept unchanged next to it, the
